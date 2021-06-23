@@ -30,8 +30,8 @@ public OnPlayerEnterCheckpoint(playerid)
 		Checkpoint_Clear(playerid);
 		CallLocalFunction(string, "d", playerid);
 	}
-	#if defined MU_OnPlayerEnterCheckpoint
-	    return MU_OnPlayerEnterCheckpoint(playerid);
+	#if defined Muteo_OnPlayerEnterCheckpoint
+	    return Muteo_OnPlayerEnterCheckpoint(playerid);
 	#else
 	    return 0;
 	#endif
@@ -43,8 +43,8 @@ public OnPlayerEnterCheckpoint(playerid)
 	#define _ALS_OnPlayerEnterCheckpoint
 #endif
 
-#define OnPlayerEnterCheckpoint MU_OnPlayerEnterCheckpoint
+#define OnPlayerEnterCheckpoint Muteo_OnPlayerEnterCheckpoint
 
-#if defined MU_OnPlayerEnterCheckpoint
-	forward MU_OnPlayerEnterCheckpoint(playerid);
+#if defined Muteo_OnPlayerEnterCheckpoint
+	forward Muteo_OnPlayerEnterCheckpoint(playerid);
 #endif
